@@ -1,0 +1,21 @@
+def atbash_cipher(text):
+    result = ""
+    for char in text:
+        if char.isalpha():
+            # Handle uppercase letters
+            if char.isupper():
+                # A ↔ Z, B ↔ Y, ...
+                result += chr(ord('Z') - (ord(char) - ord('A')))
+            else:
+                # a ↔ z, b ↔ y, ...
+                result += chr(ord('z') - (ord(char) - ord('a')))
+        else:
+            # Non-letters stay the same
+            result += char
+    return result
+
+
+# Example usage:
+message = input("Enter text: ")
+encoded = atbash_cipher(message)
+print("Atbash output:", encoded)
