@@ -30,6 +30,4 @@ Each letter is mapped to its opposite alphabet position using ASCII calculations
 
 
 
-README.md — project info
 
-Let me know if you want an even shorter version.
